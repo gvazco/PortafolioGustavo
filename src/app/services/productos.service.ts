@@ -18,11 +18,7 @@ export class ProductosService {
 
    private cargarProductos() {
 
-<<<<<<< HEAD
-      this.http.get('https://portafolio-alexis.firebaseio.com/productos_idx.json')
-=======
       this.http.get('https://portafoliogustavo-ca5fa-default-rtdb.firebaseio.com/productos_idx.json')
->>>>>>> Initial commit
           .subscribe( (resp: Producto[]) => {
 
             this.productos = resp;
@@ -33,11 +29,7 @@ export class ProductosService {
 
     getProducto( id: string ){
       
-<<<<<<< HEAD
-      return this.http.get(`https://portafolio-alexis.firebaseio.com/productos/${ id }.json`)
-=======
       return this.http.get(`https://portafoliogustavo-ca5fa-default-rtdb.firebaseio.com/productos/${ id }.json`)
->>>>>>> Initial commit
 
     }
 }
