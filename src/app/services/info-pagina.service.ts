@@ -32,7 +32,11 @@ export class InfoPaginaService {
 
   private cargarEquipo(){
     // Leer archivo JSON
+<<<<<<< HEAD
     this.http.get('https://portafolio-alexis.firebaseio.com/equipo.json')
+=======
+    this.http.get('https://portafoliogustavo-ca5fa-default-rtdb.firebaseio.com/equipo.json')
+>>>>>>> Initial commit
         .subscribe( (resp: any[]) => {
 
           this.equipo = resp;          

@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "titulo": "ALEXIS VELÁZQUEZ",
   "email": "alexveco@outlook.com",
   "nombre_corto": "Design",
@@ -7,5 +8,15 @@
   "facebook": "https://facebook.com/alexis-velazquez",
   "twitter": "https://twitter.com/alexis-velazquez",
   "instagram": "https://instagram.com/alexis-velazquez",
+=======
+  "titulo": "GUSTAVO VÁZCO",
+  "email": "gustavovazco@allsdigital.net",
+  "nombre_corto": "Design",
+  "autor": "DISTURBIO ILUSTRATIVO",
+  "pagina_autor": "https://facebook.com/disturbio-ilustrativo",
+  "facebook": "https://facebook.com/gvazco",
+  "twitter": "https://twitter.com/gvazco",
+  "instagram": "https://instagram.com/gvazco",
+>>>>>>> Initial commit
   "equipo_trabajo": {}
 }
