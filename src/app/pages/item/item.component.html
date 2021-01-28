@@ -1,0 +1,89 @@
+<section *ngIf="producto">
+  <header
+    [ngStyle]="{
+      'background-image': 'url(assets/productos/' + id + '/main.jpg)'
+    }"
+    class="rk-portfolio-cover item-inside-1"
+  >
+    <div class="item-inside__meta" style="position: relative; top: 5rem">
+      <h1 class="ae-u-bolder rk-portfolio-title">{{ producto.producto }}</h1>
+      <p class="ae-theta rk-portfolio-category">{{ producto.categoria }}</p>
+    </div>
+  </header>
+  <div class="ae-container-fluid">
+    <div class="ae-grid ae-grid--collapse rk-portfolio-info">
+      <div
+        class="ae-grid__item item-lg-8 item-sm--center au-xs-ta-center au-lg-ta-left"
+      >
+        <h2 class="rk-portfolio-inner-title">
+          {{ producto.subtitulo1 }}
+        </h2>
+      </div>
+      <div
+        class="ae-grid__item item-lg-4 au-xs-ta-center au-lg-ta-right rk-portfolio-details"
+      >
+        <p class="rk-portfolio-inner-client">
+          <span class="ae-u-bolder">Diseñador: </span
+          ><span class="ae-u-bolder">{{ producto.autor }}</span>
+        </p>
+        <p class="au-underline rk-portfolio-inner-website">
+          <a href="{{ producto.socialurl }}" class="ae-kappa">{{
+            producto.social
+          }}</a>
+        </p>
+        <p class="ae-kappa ae-u-bold rk-portfolio-inner-date">
+          {{ producto.fecha }}
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="ae-container-fluid ae-container-fluid--inner rk-portfolio--inner">
+    <div class="ae-grid ae-grid--collapse au-xs-ptp-1">
+      <div class="ae-grid__item item-lg-5">
+        <h4 class="ae-u-bolder">{{ producto.subtitulo2 }}</h4>
+        <p class="desc-1">
+          {{ producto.desc1 }}
+        </p>
+      </div>
+      <div class="ae-grid__item item-lg-6 item-lg--offset-1">
+        <img src="assets/productos/{{ id }}/pic-1.jpg" alt="Urku Portfolio" />
+      </div>
+    </div>
+    <div class="ae-grid ae-grid--collapse">
+      <div class="ae-grid__item item-lg-8">
+        <img src="assets/productos/{{ id }}/pic-2.jpg" alt="Urku Portfolio" />
+      </div>
+      <div class="ae-grid__item item-lg-3 item-lg--offset-1">
+        <br />
+        <p class="desc-2">
+          {{ producto.desc2 }}
+        </p>
+      </div>
+    </div>
+    <div class="ae-grid ae-grid--collapse au-xs-ptp-1 au-xs-pbp-1">
+      <div class="ae-grid__item item-lg-8 item-lg--offset-2">
+        <h4 class="ae-u-bolder">{{ producto.subtitulo3 }}</h4>
+        <p class="desc-3">
+          {{ producto.desc3 }}
+        </p>
+      </div>
+    </div>
+    <div class="ae-grid ae-grid--collapse">
+      <div class="ae-grid__item item-lg--auto">
+        <img src="assets/productos/{{ id }}/pic-3.jpg" alt="Urku Portfolio" />
+        <br />
+        <br />
+        <h5>{{ producto.conclusion }}</h5>
+      </div>
+    </div>
+  </div>
+  <div class="ae-container-fluid au-pt-4 au-pb-4">
+    <div class="group-buttons">
+      <a href="#0" class="au-mt-2 arrow-button arrow-button--right"
+        >Siguiente Proyecto<span class="arrow-cont">
+          <svg>
+            <use xlink:href="assets/img/symbols.svg#arrow"></use></svg></span
+      ></a>
+    </div>
+  </div>
+</section>

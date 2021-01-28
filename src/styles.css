@@ -1,0 +1,17 @@
+/*
+  Color del Loading
+*/
+svg path,
+svg rect{
+  fill: black;
+}
+
+p.desc-1{
+   font-size: 1.1rem;   
+}
+p.desc-2{
+  font-size: 1.1rem;
+}
+p.desc-3{
+  font-size: 1.25rem;
+}
